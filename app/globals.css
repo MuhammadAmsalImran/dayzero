@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #07070d;
+  --color-panel: #0f0f1a;
+  --color-line: #23233a;
+  --color-cyan: #22e6ff;
+  --color-pink: #ff2e88;
+  --color-lime: #b6ff3b;
+  --color-amber: #ffb020;
+  --color-muted: #8b8ba7;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html, body { background: var(--color-ink); color: #ececf5; }
+body {
+  font-family: var(--font-sans);
+  background-image:
+    radial-gradient(1200px 500px at 85% -10%, rgba(255,46,136,0.14), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(34,230,255,0.10), transparent 60%);
+  background-attachment: fixed;
+}
+.panel {
+  background: linear-gradient(180deg, rgba(20,20,36,0.85), rgba(12,12,22,0.85));
+  border: 1px solid var(--color-line);
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+}
+.glow-pink { text-shadow: 0 0 24px rgba(255,46,136,0.55); }
+.glow-cyan { text-shadow: 0 0 24px rgba(34,230,255,0.5); }
+.glow-lime { text-shadow: 0 0 24px rgba(182,255,59,0.45); }
+input[type=range] { accent-color: var(--color-cyan); width: 100%; }
+.grid-bg {
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@keyframes pulse-red { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
+.pulse { animation: pulse-red 1.6s ease-in-out infinite; }
