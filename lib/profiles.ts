@@ -1,0 +1,65 @@
+import type { Profile } from "./finance";
+
+// Realistic sample personas so the demo works with zero setup.
+export const PROFILES: Profile[] = [
+  {
+    id: "maya",
+    name: "Maya, sophomore",
+    tagline: "Part-time campus job, first apartment, lots of DoorDash",
+    balance: 640,
+    savings: 300,
+    paycheck: 640,
+    payEveryDays: 14,
+    nextPayInDays: 6,
+    bills: [
+      { name: "Rent (share)", amount: 725, day: 1 },
+      { name: "Phone", amount: 45, day: 12 },
+      { name: "Car insurance", amount: 118, day: 20 },
+      { name: "Utilities", amount: 60, day: 25 },
+    ],
+    spending: { dining: 290, groceries: 190, shopping: 120, transport: 95, entertainment: 70, subscriptions: 48 },
+    debt: [{ name: "Credit card", balance: 1850, apr: 27.9, minPayment: 55 }],
+    history: [1580, 1890, 1720, 2240, 1810, 2060],
+  },
+  {
+    id: "jordan",
+    name: "Jordan, international grad",
+    tagline: "TA stipend, tuition installment, strict budget",
+    balance: 2100,
+    savings: 1400,
+    paycheck: 1250,
+    payEveryDays: 14,
+    nextPayInDays: 10,
+    bills: [
+      { name: "Rent", amount: 980, day: 1 },
+      { name: "Tuition installment", amount: 650, day: 5 },
+      { name: "Phone", amount: 35, day: 12 },
+      { name: "Utilities", amount: 75, day: 22 },
+    ],
+    spending: { dining: 120, groceries: 260, shopping: 80, transport: 60, entertainment: 40, subscriptions: 25 },
+    debt: [],
+    history: [1990, 2050, 2010, 2120, 1980, 2070],
+  },
+  {
+    id: "alex",
+    name: "Alex, new grad",
+    tagline: "First full-time job, car loan, building savings",
+    balance: 3400,
+    savings: 4200,
+    paycheck: 2150,
+    payEveryDays: 14,
+    nextPayInDays: 3,
+    bills: [
+      { name: "Rent", amount: 1350, day: 1 },
+      { name: "Car insurance", amount: 145, day: 8 },
+      { name: "Phone + internet", amount: 110, day: 12 },
+      { name: "Gym", amount: 40, day: 18 },
+    ],
+    spending: { dining: 380, groceries: 320, shopping: 260, transport: 160, entertainment: 150, subscriptions: 65 },
+    debt: [
+      { name: "Car loan", balance: 14800, apr: 7.4, minPayment: 365 },
+      { name: "Student loan", balance: 22000, apr: 5.5, minPayment: 240 },
+    ],
+    history: [3050, 3420, 2980, 3610, 3190, 3300],
+  },
+];
