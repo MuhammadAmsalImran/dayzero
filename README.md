@@ -4,7 +4,7 @@
 
 Built solo at HackUTD 2026: Zero Day · PNC 360° Financial Health Navigator track.
 
-**Live:** https://dayzero-henna-nine.vercel.app · **Demo video:** https://youtu.be/cTwGJtK7ZGs
+**Live:** https://dayzero-henna-nine.vercel.app · **Demo video:** https://youtu.be/qea10vWzGtU
 
 ## Features
 - **Day Zero forecast**: a day-by-day 120-day cash-flow simulation (paychecks, bills, debt payments, daily spending) that finds the exact date your balance goes negative.
