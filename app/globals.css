@@ -9,6 +9,8 @@
   --color-lime: #b6ff3b;
   --color-amber: #ffb020;
   --color-muted: #8b8ba7;
+  --color-background: #0d0d18;
+  --color-border: #23233a;
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
@@ -38,3 +40,10 @@ input[type=range] { accent-color: var(--color-cyan); width: 100%; }
 }
 @keyframes pulse-red { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
 .pulse { animation: pulse-red 1.6s ease-in-out infinite; }
+
+@keyframes nudge { 0%,100% { transform: translateY(0); opacity:.5 } 50% { transform: translateY(8px); opacity:1 } }
+.nudge { animation: nudge 1.8s ease-in-out infinite; }
+.text-gradient {
+  background: linear-gradient(100deg, #ff2e88 10%, #ff7ab8 45%, #22e6ff 90%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
